@@ -2,7 +2,7 @@
 
 Field notes from using AI, one day at a time.
 
-Field notes from using AI, one day at a time. Learning and sharing in public.
+Field notes from using AI, one day at a time. A public, informal log of what I’m discovering in this time of “AI explosion”.
 
 AI, Tried Today is a public, informal log of what I’m discovering as I learn to use AI.
 
