@@ -1,0 +1,1 @@
+- [ ] ➕2026-01-31https://www.darioamodei.com/essay/the-adolescence-of-technology

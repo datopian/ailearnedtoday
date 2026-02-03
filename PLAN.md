@@ -4,8 +4,8 @@
 
 ## Sharing is Caring
 
-- [ ] Phoenix group
-- [ ] Weekly roundup
+- [ ] Phoenix group on signal
+- [ ] My personal Weekly roundup (?)
  
 ## Backlog
 
