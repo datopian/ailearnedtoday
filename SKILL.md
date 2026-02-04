@@ -111,8 +111,12 @@ Add [topic] reference and YYYY-MM-DD log
 ```
 
 **Push:**
-- Cannot push automatically (no git credentials configured)
-- User must push manually
+```bash
+cd ~/src/ailearnedtoday
+git push
+```
+- GitHub PAT configured in remote URL
+- Can push automatically after commit
 
 ## Examples
 
@@ -204,7 +208,7 @@ of Gmail (2M emails, 150K attachments) in a single Go binary.
 - [ ] Update `~/.openclaw/workspace/memory/YYYY-MM-DD.md`
 - [ ] Git add both files
 - [ ] Git commit with descriptive message
-- [ ] (User pushes manually)
+- [ ] Git push (automatic with configured PAT)
 
 ## Notes
 
