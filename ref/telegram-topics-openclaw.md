@@ -3,9 +3,11 @@ created: 2026-02-06
 tags: [telegram, openclaw, ai-bot, topics, threading, setup]
 ---
 
-# Multiple Threads with OpenClaw/Claude Bot on Telegram
+# Multiple Chat Threads with Your AI Agent on Telegram
 
-**How to have multiple, parallel, and independent conversations with your AI bot in Telegram using Topics.**
+Working on multiple projects with your AI assistant? You need separate conversations that don't pollute each other's context. A research task shouldn't interfere with code debugging, and email drafts shouldn't mix into your planning session.
+
+This guide shows how to have multiple, parallel, and independent conversations with your AI agent in Telegram using Topics.
 
 ![Telegram bot showing "has no access to messages"](telegram-bot-no-access.jpg)
 

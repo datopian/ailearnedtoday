@@ -116,7 +116,7 @@ cd ~/src/ailearnedtoday
 git push
 ```
 - GitHub PAT configured in remote URL
-- Can push automatically after commit
+- **Wait for user to request push** - don't push automatically after commit
 
 ## Examples
 
@@ -208,7 +208,7 @@ of Gmail (2M emails, 150K attachments) in a single Go binary.
 - [ ] Update `~/.openclaw/workspace/memory/YYYY-MM-DD.md`
 - [ ] Git add both files
 - [ ] Git commit with descriptive message
-- [ ] Git push (automatic with configured PAT)
+- [ ] Wait for user to request push (don't auto-push)
 
 ## Notes
 
