@@ -1,10 +1,17 @@
 ---
-title: "Why Writing Hasn't Had Its Codex Moment Yet"
+title: "Why Writing Hasn't Had Its Claude / Codex Moment Yet"
 created: 2026-02-09
 description: "AI-native coding tools have transformed how developers work. Writing — essays, books, screenplays, courses — deserves the same thing. Here's what exists, what's missing, and what you can do today."
 ---
 
-# Why Writing Hasn't Had Its Codex Moment Yet
+
+## Executive summary
+
+AI coding tools changed how developers work because they operate directly on the developer's own files, inside existing workflows, with repeatable commands and multi-step collaboration. Writing tools mostly have not crossed that threshold.
+
+For prose, the dominant pattern is still: enter someone else's app, paste text, generate output, copy it back. That works for isolated chunks, but it breaks down for structured writing projects — essays, books, course material, scripts, research syntheses.
+
+The finding is not that nothing exists. The finding is that the landscape is fragmented: many prose products, but inside closed editing environments; sophisticated users repurposing code agents to work on their own corpus; and no widely adopted, prose-native equivalent of the integrated coding-agent stack. The near-term path is pragmatic: use existing code-style agents on text repositories, formalise writing behaviours as files, and run a disciplined editorial workflow on content you control.
 
 ## The dream, stated plainly
 
@@ -296,3 +303,96 @@ What's missing is integration — a tool, or a thin layer on existing tools, tha
 For now, the best option for a sophisticated user is to repurpose a code agent, structure your writing project like a repo, define your style in a configuration file, and build up your own editorial skills as reusable prompts. It works. It's just not yet as elegant as what developers have.
 
 Someone should fix that.
+
+## Appendix B: A more developed writing-project scaffold
+
+The `tone.md` above is a minimal starting point. For a serious project — a book, a course, a long research piece — you might want to separate concerns more carefully, the way a mature codebase separates configuration from logic. Here's a more developed version that splits voice, tone, structure, and workflow into distinct files, each with a clear responsibility.
+
+```text
+writing-project/
+  drafts/
+    00-idea.md
+    01-outline.md
+    02-draft.md
+    03-revision.md
+  references/
+    notes.md
+    sources.md
+  prompts/
+    developmental-editor.md
+    line-editor.md
+    fact-checker.md
+  CHECKLISTS/
+    structure.md
+    style.md
+    verification.md
+  VOICE.md
+  TONE.md
+  STRUCTURE.md
+  WORKFLOW.md
+```
+
+The key distinction is between files:
+
+- **`VOICE.md`**: your durable writing identity — stance, reader relationship, diction, rhetorical defaults. This changes rarely. It's who you are on the page.
+- **`TONE.md`**: context-sensitive modulation — what shifts by audience, medium, and section type. The same voice might be warmer in an introduction and more clipped in a methods section.
+- **`STRUCTURE.md`**: canonical document architecture — how you handle openings, transitions, evidence density, conclusions. Your structural habits, made explicit.
+- **`WORKFLOW.md`**: the exact multi-pass editorial process and acceptance criteria for each pass.
+- **`prompts/*.md`**: reusable editorial operations that agents can run predictably.
+- **`CHECKLISTS/*.md`**: gate checks before moving to the next pass.
+
+Example `TONE.md`:
+
+```markdown
+# Tone Contract
+
+## Audience
+- Primary: technically literate general readers
+- Secondary: practitioners evaluating workflow design
+
+## Voice Targets
+- Clear, direct, non-performative
+- Analytical over promotional
+- Concrete before abstract
+
+## Style Constraints
+- Prefer short declarative sentences
+- Avoid hype terms and vague intensifiers
+- Use examples when making process claims
+
+## Do / Don't
+- Do state trade-offs explicitly
+- Do separate evidence from inference
+- Don't anthropomorphise tools
+- Don't hide uncertainty
+
+## Revision Priorities (in order)
+1. Argument coherence
+2. Evidence quality
+3. Clarity and compression
+4. Rhythm and polish
+```
+
+Example `WORKFLOW.md`:
+
+```markdown
+# Writing Workflow
+
+## Pass A: Structure
+Goal: validate argument map and section order.
+Exit criteria: each section has a single job and clear transition.
+
+## Pass B: Draft Expansion
+Goal: fill sections to target depth with concrete detail.
+Exit criteria: every claim has at least one supporting example or reason.
+
+## Pass C: Line Edit
+Goal: improve readability and cadence without changing meaning.
+Exit criteria: remove redundancy, sharpen verbs, tighten openings.
+
+## Pass D: Verification
+Goal: confirm factual claims and source integrity.
+Exit criteria: uncertain claims flagged or removed; citations updated.
+```
+
+You can run this with any capable code-style agent by attaching task instructions to a pass, limiting scope to explicit files, and requiring diff-based outputs per pass.
