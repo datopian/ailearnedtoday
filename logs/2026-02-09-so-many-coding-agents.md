@@ -1,14 +1,15 @@
 ---
+title: So Many Coding Agents
 creatd: 2026-02-09
 ---
 
-I'm a bit bewildered there's so many options. Which do you use and why? 
+I'm a bit bewildered there's so many options. Which do you use and why?
 
-- codex
-- claude
-- gemini
-- amp
-- opencode
+- [codex](https://github.com/openai/codex)
+- [claude](https://github.com/anthropics/claude-code)
+- [gemini](https://github.com/google-gemini/gemini-cli)
+- [amp](https://ampcode.com)
+- [opencode](https://opencode.ai)
 
 No doubt many more.
 
