@@ -1,4 +1,4 @@
-# AI, Tried Today
+# AI, Learned Today
 
 Field notes from using AI, one day at a time.
 
