@@ -1,4 +1,7 @@
 {
   "theme": "lessflowery",
-  "showSidebar": true
+  "showSidebar": true,
+  "nav": {
+    "title": "AI, Learned Today"
+  }
 }
