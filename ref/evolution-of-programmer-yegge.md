@@ -1,6 +1,6 @@
 # Evolution of the Programmer in 2024–2026
 
-![[evolution-of-programmer-yegge.png]]
+![[evolution-of-programmer-yegge.webp]]
 
 Stage 1: Zero or Near-Zero AI: maybe code completions, sometimes ask Chat questions
 
