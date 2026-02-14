@@ -2,6 +2,16 @@
   "theme": "lessflowery",
   "showSidebar": true,
   "nav": {
-    "title": "AI, Learned Today"
+    "title": "AI, Learned Today",
+    "social": [
+      {
+        "label": "github",
+        "href": "https://github.com/datopian/ailearnedtoday"
+      },
+      {
+        "label": "substack",
+        "href": "https://ailearnedtoday.substack.com"
+      }
+    ]
   }
 }
