@@ -82,28 +82,60 @@ This guide fills that gap.
 
 > "If you know the top 2-3 workflows you want to automate, expect about 15-30 minutes to build and test your first working skill using the skill-creator."
 
-## Key Insights
+## Key Insights & Quotes
 
-### YAML Frontmatter Is Critical
+### The Kitchen Analogy
 
-> "The YAML frontmatter is how Claude decides whether to load your skill."
+> "MCP provides the professional kitchen: access to tools, ingredients, and equipment.
+> 
+> Skills provide the recipes: step-by-step instructions on how to create something valuable.
+> 
+> Together, they enable users to accomplish complex tasks without needing to figure out every step themselves."
 
-This makes frontmatter design crucial for skill discoverability and activation.
+This perfectly captures the MCP + Skills relationship.
+
+### The Problem Skills Solve
+
+**Without skills:**
+- Users connect your MCP but don't know what to do next
+- Support tickets asking "how do I do X with your integration"
+- Each conversation starts from scratch
+- Inconsistent results because users prompt differently each time
+- Users blame your connector when the real issue is workflow guidance
+
+**With skills:**
+- Pre-built workflows activate automatically when needed
+- Consistent, reliable tool usage
+- Best practices embedded in every interaction
+- Lower learning curve for your integration
 
 ### Skills = Reusable Context
 
-Skills teach Claude your workflows **once** and apply them **consistently**. This is about:
+> "Instead of re-explaining your preferences, processes, and domain expertise in every conversation, skills let you teach Claude once and benefit every time."
+
+This is about:
 - Repeatability
 - Standardization
 - Reducing prompt engineering overhead
 - Building institutional knowledge
 
-### Skills + MCP = Powerful Combination
+### Progressive Disclosure (Three-Level System)
 
-The guide dedicates a section to **MCP + Skills** because the combination is powerful:
-- MCP provides **tools and data access**
-- Skills provide **workflow knowledge**
-- Together: Reliable, repeatable, context-aware automation
+Skills use a sophisticated loading strategy:
+
+**First level (YAML frontmatter):** Always loaded in Claude's system prompt. Just enough information for Claude to know when each skill should be used without loading all of it into context.
+
+**Second level (SKILL.md body):** Loaded when Claude thinks the skill is relevant. Contains the full instructions and guidance.
+
+**Third level (Linked files):** Additional files Claude can discover only as needed.
+
+> "This progressive disclosure minimizes token usage while maintaining specialized expertise."
+
+### Pro Tip: Iterate on a Single Task First
+
+> "We've found that the most effective skill creators iterate on a single challenging task until Claude succeeds, then extract the winning approach into a skill. This leverages Claude's in-context learning and provides faster signal than broad testing."
+
+Don't try to build comprehensive coverage upfront. Get one thing working really well first.
 
 ## Document Structure (32 pages)
 
@@ -201,9 +233,9 @@ This guide is Anthropic saying:
 
 ## Quote to Remember
 
-> "The YAML frontmatter is how Claude decides whether to load your skill."
+> "MCP provides the professional kitchen: access to tools, ingredients, and equipment. Skills provide the recipes: step-by-step instructions on how to create something valuable."
 
-Simple but crucial: The discoverability mechanism matters as much as the skill content.
+The kitchen analogy perfectly captures why MCP + Skills together are more powerful than either alone.
 
 ## Related
 
