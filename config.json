@@ -1,6 +1,7 @@
 {
   "theme": "lessflowery",
   "showSidebar": true,
+  "showEditLink": true,
   "nav": {
     "logo": "assets/ailearnedtoday-logo.webp",
     "title": "AI, Learned Today",
