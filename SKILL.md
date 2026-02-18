@@ -164,6 +164,42 @@ of Gmail (2M emails, 150K attachments) in a single Go binary.
 - Preserves dot for domain names
 - User explicitly requested this format
 
+## Curated Sites
+
+Sites with elegant design, clean aesthetic, or notable execution get their own ref entry and are listed in [[index-curated-sites]].
+
+### Creating a Curated Site Entry
+
+1. **Screenshot** the landing page using the browser tool (save to `assets/site-name.jpg`)
+2. **Create** `ref/site-name.md` with:
+   - Frontmatter: `created`, `url`, `tags` (include `curated-site`, `elegant-site` or similar)
+   - The screenshot embedded from `../assets/`
+   - URL
+   - Brief description of what the site/product is
+   - Why it's curated (design quality, aesthetic, etc.)
+3. **Add to index**: update `ref/index-curated-sites.md` with a row in the table
+4. **Log entry**: add to today's `logs/YYYY-MM-DD.md`
+
+### Curated Site Front Matter
+
+```yaml
+---
+created: YYYY-MM-DD
+url: https://example.com
+tags: [curated-site, elegant-site, dev-tools]
+---
+```
+
+### Curated Sites Index (`ref/index-curated-sites.md`)
+
+Maintains a simple table of all curated sites:
+
+```markdown
+| Site | URL | Notes |
+|------|-----|-------|
+| [[site-name]] | https://example.com | One-line description |
+```
+
 ## Guidelines
 
 **Conciseness:**
