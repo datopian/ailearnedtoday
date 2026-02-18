@@ -48,7 +48,7 @@ tags: [tag1, tag2, tag3]
 **Content structure:**
 1. **Title (H1)** - Project/tool name
 2. **Tagline/Description** - One-sentence summary
-3. **Screenshot** (if web-based) - Using `screenshotit.app/URL`
+3. **Screenshot** (if web-based) - Using `screenshotit.app/URL` — **place immediately after the tagline, before Links**
 4. **Links section** - Website, GitHub, docs, announcement
 5. **Overview** - What it is, what it does
 6. **Key Features** - Main capabilities
@@ -60,6 +60,8 @@ tags: [tag1, tag2, tag3]
 - Use screenshotit.app for web URLs
 - Format: `![Description](https://screenshotit.app/https://example.com/)`
 - Service auto-caches, provides stable URLs
+- **Always place at the TOP of the ref file** — immediately after the title/tagline, before all other sections
+- This gives visual context before reading the details
 
 ### 3. Daily Log Entries
 
@@ -183,7 +185,7 @@ of Gmail (2M emails, 150K attachments) in a single Go binary.
 **Screenshots:**
 - Only for web-based tools/platforms
 - Use screenshotit.app for automatic caching
-- Place early in reference (after title/links)
+- **Place at the TOP** of the ref file — after title/tagline, before Links and all other sections
 
 ## Tools
 
