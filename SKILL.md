@@ -73,13 +73,13 @@ tags: [tag1, tag2, tag3]
 
 ## [[ref-file-name]] - Short Title
 
-Brief one-sentence description with key details. Can span multiple sentences if needed to capture essence.
+Brief description with key details. Maximum 1-2 sentences.
 ```
 
 **Wiki links:**
 - Use Obsidian-style: `[[filename]]` (without `.md`)
 - Links resolve to ref/ entries
-- Keep description concise but informative
+- **Keep description to 1-2 sentences maximum** — concise but captures the essence
 
 ### 4. Update Memory
 
