@@ -39,11 +39,13 @@ ailearnedtoday/
 **Frontmatter (required):**
 ```yaml
 ---
-created: YYYY-MM-DD
+created: YYYY-MM-DD  # Date the entry was added to the repo (required)
 author: Author Name (if applicable)
 tags: [tag1, tag2, tag3]
 ---
 ```
+
+**Important**: The `created` field should always be set to the date the entry was added to the repository in `YYYY-MM-DD` format, not the original publication date of the content.
 
 **Content structure:**
 1. **Title (H1)** - Project/tool name
