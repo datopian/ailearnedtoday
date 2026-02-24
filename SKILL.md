@@ -1,10 +1,8 @@
 # AI Learned Today - Logging Skill
 
-**Note**: This file is being deprecated in favor of `AGENTS.md`, which contains comprehensive, up-to-date instructions for adding entries to the repository. Please refer to `AGENTS.md` for the canonical guide.
-
----
-
 This skill documents how to create log entries for the AI Learned Today repository.
+
+**Quick start**: Read the sections below when adding entries. For workspace instructions, see `AGENTS.md`.
 
 ## Repository Structure
 
@@ -62,12 +60,17 @@ tags: [tag1, tag2, tag3]
 8. **Technical Details** - Stack, architecture, specs
 9. **Related** - Links to related topics, blog posts
 
-**Screenshots:**
-- Use screenshotit.app for web URLs
+**Screenshots (REQUIRED for web content):**
+- **ALWAYS include for web-based tools, articles, tweets, or any public URL**
+- Use screenshotit.app: `https://screenshotit.app/{url}`
 - Format: `![Description](https://screenshotit.app/https://example.com/)`
+- **Place immediately after title/tagline, BEFORE the Links section**
 - Service auto-caches, provides stable URLs
-- **Always place at the TOP of the ref file** — immediately after the title/tagline, before all other sections
-- This gives visual context before reading the details
+- Advanced options: `@full`, `@mobile`, `@refresh`
+- Examples:
+  - Tweet: `![Topic](https://screenshotit.app/https://x.com/user/status/123)`
+  - Website: `![Tool](https://screenshotit.app/https://dmux.ai/)`
+  - Article: `![Article](https://screenshotit.app/https://anthropic.com/news/article)`
 
 ### 3. Daily Log Entries
 
