@@ -242,7 +242,7 @@ Deployed OpenClaw v0.9 to a fresh VM on exe.dev...
 
 When an entry discusses a UI, CLI output, architecture diagram, or anything where visual context adds value, insert a placeholder tag formatted exactly as:
 
-```
+```text
 [INSERT SCREENSHOT: <Description of what to screenshot>]
 ```
 
