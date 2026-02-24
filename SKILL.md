@@ -138,7 +138,7 @@ git push
 ```markdown
 ## [[msgvault]] - Local-first Email Archive
 
-Wes McKinney (pandas/Arrow creator) built msgvault: local-first email archive 
+Wes McKinney (pandas/Arrow creator) built msgvault: local-first email archive
 powered by DuckDB with MCP server for AI agent integration. Handles 20 years 
 of Gmail (2M emails, 150K attachments) in a single Go binary.
 ```
@@ -219,3 +219,42 @@ of Gmail (2M emails, 150K attachments) in a single Go binary.
 - Always use Obsidian wiki link syntax in logs
 - Screenshots are optional but recommended for web tools
 - Maintain consistent frontmatter format
+
+---
+
+## Substack Export Formatting
+
+The daily log (`logs/YYYY-MM-DD.md`) doubles as the Substack export. It must be **directly copy-pasteable** into Substack's Markdown editor with zero reformatting.
+
+### Strict Rules
+
+**1. Headings for every entry — no bullet-point entry lists.**
+
+Each distinct topic in the daily log MUST be a Markdown heading (`###`). Never use a bullet-point list as the primary structure for entries. Paragraphs, inline formatting, and sub-details beneath a heading are fine.
+
+```markdown
+### OpenClaw Testing & SendClaw Integration on exe.dev
+
+Deployed OpenClaw v0.9 to a fresh VM on exe.dev...
+```
+
+**2. Screenshot placeholders.**
+
+When an entry discusses a UI, CLI output, architecture diagram, or anything where visual context adds value, insert a placeholder tag formatted exactly as:
+
+```
+[INSERT SCREENSHOT: <Description of what to screenshot>]
+```
+
+Examples:
+```markdown
+[INSERT SCREENSHOT: exe.dev VM dashboard showing the OpenClaw deployment]
+[INSERT SCREENSHOT: Terminal output of the DH CLI init command]
+[INSERT SCREENSHOT: Queryless Bot pairing flow in the browser]
+```
+
+The author replaces these with actual screenshots before publishing on Substack.
+
+**3. No narrative blog-post style.**
+
+The output is the raw daily log — not a polished essay. Keep descriptions concise, factual, and in the style of the existing `logs/` entries (1–3 short paragraphs per heading).
