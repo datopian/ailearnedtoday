@@ -1,5 +1,9 @@
 # AI Learned Today - Logging Skill
 
+**Note**: This file is being deprecated in favor of `AGENTS.md`, which contains comprehensive, up-to-date instructions for adding entries to the repository. Please refer to `AGENTS.md` for the canonical guide.
+
+---
+
 This skill documents how to create log entries for the AI Learned Today repository.
 
 ## Repository Structure
