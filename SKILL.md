@@ -72,7 +72,45 @@ tags: [tag1, tag2, tag3]
   - Website: `![Tool](https://screenshotit.app/https://dmux.ai/)`
   - Article: `![Article](https://screenshotit.app/https://anthropic.com/news/article)`
 
-### 3. Daily Log Entries
+### 3. Updating Existing Entries
+
+**When to add updates:**
+- User provides feedback after trying a tool/product
+- New significant features or developments
+- Changed assessment or experience report
+- Corrections or clarifications
+
+**Format for user feedback/experience:**
+```markdown
+> **User Experience Note (YYYY-MM-DD):**  
+> [User's feedback or experience report] — [Name]
+```
+
+**Placement:**
+- Add near the top, after "What Is It?" or similar intro section
+- Before detailed features/documentation
+- Use blockquote format with bold heading for visibility
+
+**Example:**
+```markdown
+> **User Experience Note (2026-02-26):**  
+> After playing with this for a few weeks, haven't found it so satisfying yet. Maybe haven't got the knack. — Rufus Pollock
+```
+
+**Git workflow for updates:**
+```bash
+cd ~/src/datopian/ailearnedtoday
+git add ref/updated-file.md
+git commit -m "Update: [item name] - add user experience note"
+git push
+```
+
+**When NOT to update:**
+- Minor typos or formatting fixes (batch these)
+- Speculative changes without verification
+- Opinions that contradict documented facts (add as separate note instead)
+
+### 4. Daily Log Entries
 
 **File location:** `logs/YYYY-MM-DD.md`
 
@@ -90,7 +128,7 @@ Brief description with key details. Maximum 1-2 sentences.
 - Links resolve to ref/ entries
 - **Keep description to 1-2 sentences maximum** — concise but captures the essence
 
-### 4. Update Memory
+### 5. Update Memory
 
 After creating entries, update `~/.openclaw/workspace/memory/YYYY-MM-DD.md`:
 
@@ -103,7 +141,7 @@ After creating entries, update `~/.openclaw/workspace/memory/YYYY-MM-DD.md`:
 - Key links: URLs
 ```
 
-### 5. Git Workflow
+### 6. Git Workflow
 
 **Add files:**
 ```bash

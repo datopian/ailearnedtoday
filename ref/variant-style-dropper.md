@@ -24,6 +24,9 @@ Variant is an AI UI design tool that generates "actually well-designed" software
 
 It's like working with a creative director that never runs out of options.
 
+> **User Experience Note (2026-02-26):**  
+> After playing with this for a few weeks, haven't found it so satisfying yet. Maybe haven't got the knack. — Rufus Pollock
+
 ## What Problem Does It Solve?
 
 ### Traditional AI Design Issues
