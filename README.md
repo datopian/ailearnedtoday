@@ -8,3 +8,7 @@ AI, Tried Today is a learning-in-public journal about getting to know modern AI 
 - https://ailearnedtoday.substack.com -- newsletter
 
 Contributions welcome!
+
+## Subscribe
+
+<iframe src="https://ailearnedtoday.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
