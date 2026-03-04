@@ -33,6 +33,11 @@ ailearnedtoday/
 
 ### 2. Creating Reference Entries
 
+**Default: Keep it concise**
+- Brief description + screenshot is often enough
+- Add detail only when specifically requested or clearly warranted
+- Avoid massive essays unless the topic demands it
+
 **File naming:**
 - Use descriptive, URL-friendly names
 - Examples: `msgvault.md`, `inference-sh.md`, `pi.dev.md`
@@ -49,16 +54,20 @@ tags: [tag1, tag2, tag3]
 
 **Important**: The `created` field should always be set to the date the entry was added to the repository in `YYYY-MM-DD` format, not the original publication date of the content.
 
-**Content structure:**
+**Minimal content structure** (default):
 1. **Title (H1)** - Project/tool name
 2. **Tagline/Description** - One-sentence summary
 3. **Screenshot** (if web-based) - Using `screenshotit.app/URL` — **place immediately after the tagline, before Links**
 4. **Links section** - Website, GitHub, docs, announcement
-5. **Overview** - What it is, what it does
-6. **Key Features** - Main capabilities
-7. **Why It Exists / Why Interesting** - Context, motivation
-8. **Technical Details** - Stack, architecture, specs
-9. **Related** - Links to related topics, blog posts
+5. **Overview** - Brief what/why (2-3 paragraphs)
+6. **Key Features** (optional) - If notable
+7. **Use Cases** (optional) - If helpful
+
+**Comprehensive structure** (when requested or clearly warranted):
+- Add: Why It Exists / Why Interesting
+- Add: Technical Details (stack, architecture, specs)
+- Add: Detailed sections on features, philosophy, comparisons
+- Add: Related topics, commentary, significance
 
 **Screenshots (REQUIRED for web content):**
 - **ALWAYS include for web-based tools, articles, tweets, or any public URL**
