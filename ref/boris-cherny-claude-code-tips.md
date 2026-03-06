@@ -81,15 +81,19 @@ Reuse across every project.
 
 Say "Grill me on these changes and don't make a PR until I pass your test." Make Claude be your reviewer.
 
-Or: "Prove to me this works" and have Claude diff behavior between main and your feature branch.
+Or, say "Prove to me this works" and have Claude diff behavior between main and your feature branch
 
-**b. After a mediocre fix**
+**b. After a mediocre fix, say:**
 
-Say: "Knowing everything you know now, scrap this and implement the elegant solution"
+"Knowing everything you know now, scrap this and implement the elegant solution"
 
-**c. Write detailed specs**
+**c. Write detailed specs and reduce ambiguity before handing work off**
 
-Reduce ambiguity before handing work off. The more specific you are, the better the output.
+The more specific you are, the better the output
+
+**d. Route permission requests to Opus 4.5 via a hook**
+
+Let it scan for attacks and auto-approve the safe ones (see https://code.claude.com/docs/en/hooks#permissionrequest)
 
 ### 7. Terminal & Environment Setup
 
@@ -109,13 +113,33 @@ Reduce ambiguity before handing work off. The more specific you are, the better 
 
 ### 8. Use Subagents
 
-**a. More compute**: Append "use subagents" to any request where you want Claude to throw more compute at the problem
+**a.** Append "use subagents" to any request where you want Claude to throw more compute at the problem
 
-**b. Keep context clean**: Offload individual tasks to subagents to keep your main agent's context window clean and focused
+**b.** Offload individual tasks to subagents to keep your main agent's context window clean and focused
+
+### 9. Use Claude for Data & Analytics
+
+Ask Claude Code to use the "bq" CLI to pull and analyze metrics on the fly. We have a BigQuery skill checked into the codebase, and everyone on the team uses it for anlytics queries directly in Claude Code.
+
+Personally, I haven't written a line of SQL in 6+ months.
+
+This works for any database that has a CLI, MCP, or API.
+
+### 10. Learning with Claude
+
+A few tips from the team to use Claude Code for learning:
+
+**a.** Enable the "Explanatory" or "Learning" output style in /config to have Claude explain the *why* behind its changes
+
+**b.** Have Claude generate a visual HTML presentation explaining unfamiliar code. It makes surprisingly good slides!
+
+**c.** Ask Claude to draw ASCII diagrams of new protocols and codebases to help you understand them
+
+**d.** Build a spaced-repetition learning skill: you explain your understanding, Claude asks follow-ups to fill gaps, stores the result
 
 ## Key Principles
 
-From the tips, several principles emerge:
+From the 10 tips, several principles emerge:
 
 1. **Parallelism is power** - The #1 productivity unlock
 2. **Planning beats iteration** - Invest in the plan, get 1-shot implementations
@@ -125,6 +149,8 @@ From the tips, several principles emerge:
 6. **Challenge and verification** - Make Claude prove it works
 7. **Voice > typing** - 3x faster, more detailed prompts
 8. **Subagents for scale** - Offload and keep main context clean
+9. **Data & analytics** - Haven't written SQL in 6+ months (use CLI/MCP/API)
+10. **Learning modes** - Explanatory output style, HTML presentations, ASCII diagrams, spaced-repetition
 
 ## Context
 
