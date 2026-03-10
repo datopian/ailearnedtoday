@@ -4,7 +4,7 @@ author: Various (comparison/synthesis)
 tags: [skills, agents-md, claude-md, conventions, documentation, ai-agents]
 ---
 
-# What's the Difference Between SKILL.md, AGENTS.md, and .claud Files?
+# What's the Difference Between SKILL.md, AGENTS.md, and .claude Files?
 
 > Three different conventions for instructing AI agents, each with a distinct purpose and scope.
 
