@@ -31,7 +31,7 @@ The Agent Skills Directory aggregates skills from major repositories and communi
 
 ## Related
 
-- [[moc-skills-management]]
+- [[skills-managers]]
 - [[oh-my-agents]]
 - [[openskills]]
 - [[simon-willison-not-boring-tech]]

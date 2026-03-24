@@ -1,11 +1,11 @@
 ---
 created: 2026-03-24
-tags: [moc, skills, management, package-manager, agents, tooling]
+tags: [skills, management, package-manager, agents, tooling]
 ---
 
-# Skills Management Tools - MOC
+# Skills Managers
 
-Map of content for tools that help discover, organize, and distribute agent skills across projects and coding agents.
+Tools that help discover, organize, and distribute agent skills across projects and coding agents.
 
 ## Category Overview
 

@@ -29,7 +29,7 @@ Oh My Agents helps you discover, organize, deploy, and sync prompts and skills a
 
 ## Related
 
-- [[moc-skills-management]]
+- [[skills-managers]]
 - [[skills-sh]]
 - [[openskills]]
 - [[skill-vs-agents-vs-claude-md]]

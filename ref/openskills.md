@@ -25,7 +25,7 @@ OpenSkills is a universal skills loader that treats agent skills like npm depend
 
 ## Related
 
-- [[moc-skills-management]]
+- [[skills-managers]]
 - [[skills-sh]]
 - [[oh-my-agents]]
 - [[skill-vs-agents-vs-claude-md]]
