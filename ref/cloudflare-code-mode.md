@@ -24,6 +24,8 @@ Cloudflare's approach to MCP: convert tools to TypeScript API, let LLMs write co
 
 ## Overview
 
+**Note**: This post from September 2025 introduced the Code Mode concept and the experimental Dynamic Worker Loader API. See [[cloudflare-dynamic-workers]] for the March 2026 open beta announcement.
+
 LLMs are better at writing code to call MCP than at calling MCP directly. Cloudflare's Code Mode converts MCP tools into a TypeScript API and asks the LLM to write code that calls that API, rather than using traditional tool calling.
 
 **Key results**:
@@ -103,6 +105,7 @@ Agent generates and runs code that calls the tools. Results returned via `consol
 
 ## Related
 
+- [[cloudflare-dynamic-workers]] - March 2026 open beta: makes Code Mode practical with 100x faster sandboxing
 - [[deerflow]]
 - [[openclaw]]
 - [[symphony-openai]]
