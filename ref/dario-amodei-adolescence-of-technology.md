@@ -96,6 +96,8 @@ Even if AI follows instructions, what if bad actors use it?
 
 What if a dictator or rogue corporate actor controls the AI country?
 
+> AI companies. It is somewhat awkward to say this as the CEO of an AI company, but I think the next tier of risk is actually AI companies themselves. AI companies control large datacenters, train frontier models, have the greatest expertise on how to use those models, and in some cases have daily contact with and the possibility of influence over tens or hundreds of millions of users. The main thing they lack is the legitimacy and infrastructure of a state, so much of what would be needed to build the tools of an AI autocracy would be illegal for an AI company to do, or at least exceedingly suspicious. But some of it is not impossible: they could, for example, use their AI products to brainwash their massive consumer user base, **and the public should be alert to the risk this represents. I think the governance of AI companies deserves a lot of scrutiny.** [good point and likely aimed, rightly, at OpenAI and Google etc]
+
 ### 4. Economic Disruption
 
 What if peaceful AI participation creates mass unemployment or radical wealth concentration?
