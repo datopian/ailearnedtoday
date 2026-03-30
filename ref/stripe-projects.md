@@ -59,7 +59,6 @@ Generate, store, and return service credentials for both developers and agents.
 
 ## Related
 
-- [[bisque]] - Comprehensive pre-existing alternative: 12-domain unified CLI with agent identity and vault
 - [[cloudflare-dynamic-workers]]
 - [[openclaw]]
 - [[deerflow]]
