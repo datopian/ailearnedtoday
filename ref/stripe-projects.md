@@ -15,6 +15,7 @@ Provision and manage cloud services from the CLI — designed for developers and
 - **Website**: https://projects.dev
 - **Status**: Developer Preview
 - **By**: Stripe
+- **Announcement**: https://x.com/patrickc/status/2037190688950161709
 
 ## Overview
 
@@ -58,6 +59,7 @@ Generate, store, and return service credentials for both developers and agents.
 
 ## Related
 
+- [[bisque]] - Comprehensive pre-existing alternative: 12-domain unified CLI with agent identity and vault
 - [[cloudflare-dynamic-workers]]
 - [[openclaw]]
 - [[deerflow]]
