@@ -36,6 +36,12 @@ Place immediately after title/tagline, before Links section.
 ### Log Entries
 **Maximum 1-2 sentences**. Concise over comprehensive.
 
+### Log Entry H1 Titles
+Every log file must have an H1 title in the format: `# yyyy-mm-dd {Short Title}`
+- The date comes from the filename
+- The title should be a brief, meaningful summary (3-8 words)
+- This ensures entries are recognizable when listed on the website
+
 ### Frontmatter
 Every ref entry needs:
 ```yaml
