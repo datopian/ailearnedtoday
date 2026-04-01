@@ -3,6 +3,8 @@ title: So Many Coding Agents
 creatd: 2026-02-09
 ---
 
+# 2026-02-09 So Many Coding Agents to Choose From
+
 I'm a bit bewildered there's so many options. Which do you use and why?
 
 - [codex](https://github.com/openai/codex)
