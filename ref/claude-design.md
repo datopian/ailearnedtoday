@@ -8,12 +8,13 @@ tags: [designapps, claude, anthropic, prototyping, slides, one-pagers, vision-mo
 
 Anthropic Labs feature for making prototypes, slides, and one-pagers by talking to Claude.
 
-![Claude Design](https://screenshotit.app/https://claude.ai/design)
+![Claude Design announcement](https://screenshotit.app/https://www.anthropic.com/news/claude-design-anthropic-labs)
 
 ## Links
 
+- **Announcement (Anthropic)**: https://www.anthropic.com/news/claude-design-anthropic-labs
 - **Product**: https://claude.ai/design
-- **Announcement**: https://x.com/claudeai/status/2045156267690213649
+- **Tweet**: https://x.com/claudeai/status/2045156267690213649
 
 ## Announcement (verbatim)
 
@@ -21,7 +22,7 @@ Anthropic Labs feature for making prototypes, slides, and one-pagers by talking 
 
 ## Notes
 
-- The claude.ai link currently redirects to login when fetched without an authenticated session.
+- The claude.ai product link redirects to login when fetched without an authenticated session; the Anthropic announcement page above is the stable reference.
 - Positioned as part of the emerging **designapps** category (agentic design tools alongside [[stitch-google]], [[aura-build]], [[variant]]).
 
 ## Related
