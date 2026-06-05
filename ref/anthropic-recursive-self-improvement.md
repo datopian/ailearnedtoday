@@ -35,6 +35,12 @@ Inflection points correlate with Claude Code release, Claude Sonnet 4.5, Claude 
 
 Key framing: this is **recursive self-improvement** — AI helping build better AI, measured not theoretically but in actual merged code per engineer.
 
+## Excerpts
+
+![Excerpt: Claude gone from super helpful to superhuman in under a year](/assets/anthropic-recursive-self-improvement-excerpt-claude-superhuman.png)
+
+> **Claude is good at running experiments to hit a goal that someone else has set.** Every time Anthropic releases a model, we run the same test: we give Claude some code that trains a small AI model, and ask it to make that code run as fast as possible while still passing the same correctness checks. [...] In May 2025, Claude Opus 4 averaged a ~3x speedup over the starting code. By April 2026, Claude Mythos Preview was achieving ~52x. For calibration, a skilled human researcher would need four to eight hours to reach 4x. In this part of the research workflow—optimizing steps within a clearly defined experiment—Claude has gone from super helpful to superhuman in under a year.
+
 ## Significance
 
 - First published internal data showing the feedback loop closing: AI tools → faster AI development → better AI tools
