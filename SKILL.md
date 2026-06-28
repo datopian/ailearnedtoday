@@ -137,20 +137,7 @@ Brief description with key details. Maximum 1-2 sentences.
 - Links resolve to ref/ entries
 - **Keep description to 1-2 sentences maximum** — concise but captures the essence
 
-### 5. Update Memory
-
-After creating entries, update `~/.openclaw/workspace/memory/YYYY-MM-DD.md`:
-
-```markdown
-## AI Learned Today Updates
-
-- Created ref/topic.md with frontmatter, links, details
-- Updated logs/YYYY-MM-DD.md with [[topic]] wiki link
-- Topic: brief description
-- Key links: URLs
-```
-
-### 6. Git Workflow
+### 5. Git Workflow
 
 **Add files:**
 ```bash
@@ -263,7 +250,6 @@ of Gmail (2M emails, 150K attachments) in a single Go binary.
 - [ ] If reference: include links, overview, features
 - [ ] If web tool: add screenshot via screenshotit.app
 - [ ] Update `logs/YYYY-MM-DD.md` with wiki link entry
-- [ ] Update `~/.openclaw/workspace/memory/YYYY-MM-DD.md`
 - [ ] Git add both files
 - [ ] Git commit with descriptive message
 - [ ] Wait for user to request push (don't auto-push)
