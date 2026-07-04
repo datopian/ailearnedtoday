@@ -12,7 +12,7 @@ AI agents are rebuilding that stack right now, for know-how instead of code. A "
 | Composable — libraries depend on libraries | Composable — a skill can point an agent at other skills |
 | Discovered via npm/PyPI search | Discovered via directories like skills.sh (see appendix) |
 
-![npm registry](https://screenshotit.app/https://www.npmjs.com)
+![agentskills.io](https://screenshotit.app/https://agentskills.io/home)
 
 The gaps in that second column are exactly where the ecosystem is right now: pre-npm. The *file format* has actually converged fast — SKILL.md, more below — but the plumbing around it (registries, versioning, a real dependency graph, an `npm link` equivalent) is still being invented by several different projects at once, none dominant yet.
 
