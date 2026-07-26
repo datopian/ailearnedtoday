@@ -67,6 +67,8 @@ Loop engineering changes the work but doesn't delete you from it. Three problems
 
 ## Related
 
+- [[moc-loop-engineering]] - Map of Content for loop engineering
+- [[brittany-ellich-loop-engineering]] - Brittany Ellich's 108-PRs-in-8-days case study building on this essay
 - [[skill-vs-agents-vs-claude-md]]
 - [[boris-cherny-claude-code-tips]]
 - [[trq212-claude-5-context-engineering]]
