@@ -42,6 +42,25 @@ Every log file must have an H1 title in the format: `# yyyy-mm-dd {Short Title}`
 - The title should be a brief, meaningful summary (3-8 words)
 - This ensures entries are recognizable when listed on the website
 
+Every log file must also have `date: YYYY-MM-DD` in its frontmatter so Flowershow can sort the log listing newest-first. The date must match the filename.
+
+### Blog Posts
+
+Every blog post in `posts/` (excluding `posts/index.md`) must begin with:
+
+```yaml
+---
+title: A concise post title
+description: A one-sentence summary used in listings and social metadata.
+date: YYYY-MM-DD
+---
+```
+
+- The date must match the date prefix in the filename.
+- Do not repeat the title as an H1 in the body. Flowershow renders the frontmatter `title` as the page title.
+- Start the body with the opening paragraph, tagline, or screenshot as appropriate.
+- Keep `title`, `description`, and `date` accurate because the homepage and `posts/index.md` use them to render and sort post listings.
+
 ### Frontmatter
 Every ref entry needs:
 ```yaml
@@ -58,7 +77,9 @@ tags: [tag1, tag2, tag3]
 ailearnedtoday/
 ├── ref/            # Full reference entries
 ├── logs/           # Daily logs (1-2 sentence summaries)
-├── posts/          # Long-form articles
+│   └── index.md    # Flowershow log listing
+├── posts/          # Long-form articles with title/description/date frontmatter
+│   └── index.md    # Flowershow post listing
 ├── SKILL.md        # Comprehensive guide (READ THIS)
 └── AGENTS.md       # This file
 ```

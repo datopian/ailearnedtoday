@@ -1,4 +1,8 @@
-# Can I schedule Claude Code for when my usage resets?
+---
+title: Can I schedule Claude Code for when my usage resets?
+description: How to schedule cloud and local Claude Code tasks for when the next subscription usage window begins.
+date: 2026-08-01
+---
 
 I had a practical question: if I have exhausted my Claude Code allowance and the next usage window starts in three hours, can I queue useful work now and have Claude begin when the allowance returns?
 

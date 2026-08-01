@@ -1,3 +1,9 @@
+---
+title: Breaking Up with Beads
+description: Notes and commands from migrating a project from Beads to Taskgraph.
+date: 2026-02-28
+---
+
 Here's my process so far ...
 
 ```

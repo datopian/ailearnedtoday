@@ -1,4 +1,8 @@
-# The Design Repo Pattern: Keep Your Inspiration Separate from Your Code
+---
+title: "The Design Repo Pattern: Keep Your Inspiration Separate from Your Code"
+description: A simple way to keep design research and experiments separate from an application's implementation repository.
+date: 2026-02-23
+---
 
 **Status**: Draft  
 **Created**: 2026-02-23

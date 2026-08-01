@@ -1,6 +1,6 @@
 ---
 title: So Many Coding Agents
-creatd: 2026-02-09
+date: 2026-02-09
 ---
 
 # 2026-02-09 So Many Coding Agents to Choose From

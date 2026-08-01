@@ -7,6 +7,16 @@
   "nav": {
     "logo": "assets/ailearnedtoday-logo.webp",
     "title": "AI, Learned Today",
+    "links": [
+      {
+        "name": "Posts",
+        "href": "/posts"
+      },
+      {
+        "name": "Logs",
+        "href": "/logs"
+      }
+    ],
     "social": [
       {
         "label": "github",

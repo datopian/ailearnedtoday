@@ -1,4 +1,8 @@
-# Skills are to AI what libraries were to software
+---
+title: Skills are to AI what libraries were to software
+description: Why reusable agent skills resemble software libraries, and how the emerging package ecosystem compares with npm.
+date: 2026-07-04
+---
 
 Software got good when we stopped rewriting code and started sharing it. Every language eventually grew the same stack: a package format, a registry, a CLI to install/publish/version. `pip`, `npm`, `cargo`, `gem` — different syntax, same trade: don't write it again, depend on it instead.
 
