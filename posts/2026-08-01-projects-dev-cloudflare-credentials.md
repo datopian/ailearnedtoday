@@ -8,16 +8,33 @@ I keep hitting the same failure mode with AI coding agents. The agent builds the
 
 ## What it changes
 
-Stripe Projects is essentially a provisioning and credential broker for coding agents. Instead of every agent learning a different dashboard and authentication procedure, it gets a catalog and a small set of commands:
+Stripe Projects is essentially a provisioning and credential broker for coding agents. Instead of every agent learning a different dashboard and authentication procedure, it gets a catalog and a small set of commands.
+
+### A concrete example
+
+Suppose I am in an agent session and say:
+
+> Deploy this as a Cloudflare Worker at `api.example.com`. Use Stripe Projects, stay on the free tier, and ask before doing anything paid.
+
+The agent runs:
 
 ```bash
 stripe projects init
-stripe projects search cloudflare --json
 stripe projects link cloudflare
 stripe projects add cloudflare/worker
 ```
 
-For Cloudflare this is a first-party integration, not a wrapper that scrapes the dashboard. [Cloudflare says](https://blog.cloudflare.com/agents-stripe-projects/) Projects can link an existing Cloudflare account—or create one if none exists—then issue the agent an API token and let it deploy. A human still approves the OAuth connection and accepts terms when required, but there is no manual token creation or permission-selection dance.
+On first use, `link` gives me one Cloudflare OAuth approval. Projects then supplies the account ID and API token through the project's gitignored `.env`, which Wrangler reads automatically—no separate `wrangler login` or hand-created token.
+
+The agent adds the [Custom Domain](https://developers.cloudflare.com/workers/configuration/routing/custom-domains/) to `wrangler.jsonc`:
+
+```jsonc
+"routes": [{ "pattern": "api.example.com", "custom_domain": true }]
+```
+
+Then it runs `npx wrangler deploy`. Cloudflare uploads the Worker, creates the `api.example.com` DNS record, and issues its certificate. Projects handled authorization and credentials; Wrangler handled deployment and routing. This works because the Worker is the origin: Projects can register a new domain, but its current catalog does not expose arbitrary DNS-record management for other cases.
+
+For Cloudflare this is a first-party integration, not a wrapper that scrapes the dashboard. [Cloudflare says](https://blog.cloudflare.com/agents-stripe-projects/) Projects can link an existing Cloudflare account—or create one if none exists—then issue the agent an API token and let it deploy.
 
 The live catalog currently exposes Workers plus D1, KV, R2, Queues, Workers AI, Browser Rendering, Hyperdrive, Containers, and domains. More importantly, it returns machine-readable configuration and pricing information, so the agent knows what can be provisioned instead of asking me to research each product first.
 
