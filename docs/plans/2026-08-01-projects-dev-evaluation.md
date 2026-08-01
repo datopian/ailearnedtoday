@@ -79,4 +79,3 @@
 **Step 5:** Commit the post and log with a focused message.
 
 **Step 6:** Push the current branch and verify the remote update.
-

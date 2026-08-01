@@ -31,4 +31,3 @@ Use a verdict-first field test rather than a broad product survey:
 - A 1–2 sentence entry in `logs/2026-08-01.md` with the required dated H1.
 - Concrete setup commands only where they materially help the reader.
 - A clear verdict near the top; no generic credential-management survey.
-
