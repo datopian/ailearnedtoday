@@ -1,5 +1,5 @@
 ---
-created: 2026-07-26
+created: 2026-08-01
 author: DeepSeek
 tags: [deepseek, deepseek-v4, model-release, llms, agentic-coding, api, pricing, context-engineering, open-weights, major-news]
 ---
