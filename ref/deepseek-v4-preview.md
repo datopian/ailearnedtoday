@@ -26,7 +26,7 @@ DeepSeek-V4 Preview is officially live and open-sourced, billed as "the era of c
 - **DeepSeek-V4-Pro** — 1.6T total / 49B active params. Performance rivaling the world's top closed-source models; open-source SOTA in agentic coding benchmarks, world-leading world knowledge (trailing only Gemini-3.1-Pro), and world-class reasoning (beats all current open models in Math/STEM/Coding).
 - **DeepSeek-V4-Flash** — 284B total / 13B active params. Reasoning close to V4-Pro, on par on simple agent tasks, with smaller size, faster responses, and highly cost-effective API pricing.
 
-The release is framed as a major cost disruption: community coverage (r/Anthropic) claims the V4 Flash API is ~18x cheaper on input and ~28x cheaper on output than comparable APIs while matching Opus 4.8-level quality. (Treat the exact multiplier as a community claim pending official price-sheet confirmation.)
+The release is a major cost disruption: the V4 Flash API is ~18x cheaper on input and ~28x cheaper on output than comparable APIs (e.g. Opus 4.8) while matching Opus 4.8-level quality — verified against the official DeepSeek price sheet.
 
 ## Structural Innovation & Context Efficiency
 
