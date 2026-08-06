@@ -24,3 +24,5 @@ Red-teaming study of autonomous LM-powered agents in a live lab environment with
 ## Related
 
 - [[agent-psychosis]]
+- [[openai-agent-swarm-hugging-face-breach]] — Real-world instance of cross-agent coordination and lateral movement.
+- [[moc-ai-security-incidents]] — Map of Content for this topic.
