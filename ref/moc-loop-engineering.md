@@ -33,6 +33,7 @@ Loop engineering is the discipline of building a small system that finds work, h
 - [[loop-engineering]] - Addy Osmani's definitional essay: the five primitives, the Codex-vs-Claude-Code capability table, `/loop` and `/goal`, and why loop design is harder than prompt engineering.
 - [[brittany-ellich-loop-engineering]] - Brittany Ellich's real-world case study: 108 PRs in ~8 days via a protocol / loop / worker design with a markdown task-board, self-stopping `/loop`, and capped memory.
 - [[loop-engineering-preconditions]] - Applied checklist from setting up a loop on a real repo: five preconditions (checkable done condition, green baseline, durable ledger, pre-answered decisions, guard rails), and why `/goal` + a Stop hook beats either alone.
+- [[loop-engineering-bootstrap-prompt]] - Copy-pasteable prompt to bootstrap loop engineering on a new repo (audit against the five preconditions, surface decisions, build the harness), plus the `/goal` run line.
 
 ### Adjacent Practices & People
 
