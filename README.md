@@ -14,6 +14,10 @@ AI, Learned Today is a learning-in-public journal about how to use modern AI thr
 
 Contributions welcome!
 
+## Quick link
+
+- [Loop Engineering →](/ref/moc-loop-engineering) — how to set up an unattended agent loop: the five preconditions, an applied checklist, and a copy-pasteable bootstrap prompt.
+
 ## Latest posts
 
 <List
