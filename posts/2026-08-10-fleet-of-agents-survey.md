@@ -1,10 +1,12 @@
 ---
 title: "Fleet of agents: a survey of orchestration tools (WIP)"
-description: A first pass through Gas Town, Paperclip, Claude Code's native Agent View, and the rest of the agent-orchestration field — answering the question posed in the previous post.
+description: Gas Town, Paperclip, or Claude's own Agent View — which one actually manages a fleet of agents instead of just watching them? A field survey with a verdict.
 date: 2026-08-10
 ---
 
 *This is a work in progress — first pass at the research, published as I go. Follow-up to [How do I run a fleet of coding agents?](/posts/2026-08-10-running-a-fleet-of-agents)*
+
+![Vibe Kanban board for orchestrating AI coding agents](https://screenshotit.app/https://vibekanban.com/)
 
 ## TL;DR
 
