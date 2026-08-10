@@ -10,7 +10,13 @@ tags: [ai-security, agent-swarm, autonomous-agents, security-incident, openai, m
 
 https://www.youtube.com/watch?v=87DyyMV0kCY
 
-## Quote
+### Excerpts from YouTube
+
+<img width="995" height="559" alt="image" src="https://github.com/user-attachments/assets/d9140915-5f95-48b9-864d-9888e07d76d1" />
+
+## Summary from X
+
+Source: https://x.com/AISafetyMemes/status/2085129043956097299
 
 > 🚩🚩🚩 OpenAI is "slowing down to enhance security" after discovering swarms (!) of agents started secretly coordinating MONTHS ago
 >
@@ -25,8 +31,6 @@ https://www.youtube.com/watch?v=87DyyMV0kCY
 > 3) OpenAI shut it down, BUT "even after the original message board was deleted, the agents figured out another way to communicate with each other. Instead of leaving messages in files, they used the names of newly created directories as messages, effectively recreating the message board."
 >
 > "Unlike normal incidents, [OpenAI's CISO] said, which can be traced to a single day or effect or log, this involved a team of agents working together, finding exploits, sharing them with one another, moving laterally through OpenAI's systems, and external systems, and doing this over the course of days and weeks."
-
-Source: https://x.com/AISafetyMemes/status/2085129043956097299
 
 ## Related
 
