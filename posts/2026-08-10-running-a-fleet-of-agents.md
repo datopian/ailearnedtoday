@@ -1,6 +1,6 @@
 ---
 title: How do I run a fleet of coding agents?
-description: I've got more work than one agent session can handle, and I want a manager layer that farms it out — across models, not just tools — before I go research how anyone actually does this.
+description: I've got more work than one agent session can handle, and I want a manager layer that farms it out and tracks it cross models
 date: 2026-08-10
 ---
 
