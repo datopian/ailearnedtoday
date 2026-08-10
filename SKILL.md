@@ -1,13 +1,13 @@
-# AI Learned Today - Logging Skill
+# Way Into AI - Logging Skill
 
-This skill documents how to create log entries for the AI Learned Today repository.
+This skill documents how to create log entries for the Way Into AI repository.
 
 **Quick start**: Read the sections below when adding entries. For workspace instructions, see `AGENTS.md`.
 
 ## Repository Structure
 
 ```
-ailearnedtoday/
+wayintoai/
 ├── logs/           # Daily logs with wiki links
 │   └── YYYY-MM-DD.md
 ├── ref/            # Detailed reference entries
@@ -108,7 +108,7 @@ tags: [tag1, tag2, tag3]
 
 **Git workflow for updates:**
 ```bash
-cd ~/src/datopian/ailearnedtoday
+cd ~/src/datopian/wayintoai
 git add ref/updated-file.md
 git commit -m "Update: [item name] - add user experience note"
 git push
@@ -141,7 +141,7 @@ Brief description with key details. Maximum 1-2 sentences.
 
 **Add files:**
 ```bash
-cd ~/src/ailearnedtoday
+cd ~/src/datopian/wayintoai
 git add logs/YYYY-MM-DD.md ref/new-entry.md
 ```
 
@@ -157,7 +157,7 @@ Add [topic] reference and YYYY-MM-DD log
 
 **Push:**
 ```bash
-cd ~/src/ailearnedtoday
+cd ~/src/datopian/wayintoai
 git push
 ```
 - GitHub PAT configured in remote URL

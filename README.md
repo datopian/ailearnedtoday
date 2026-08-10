@@ -3,14 +3,14 @@ syntaxMode: mdx
 showToc: false
 ---
 
-# AI, Learned Today
+# Way Into AI
 
-Field notes from using AI, one day at a time. 
+From curious to capable.
 
-AI, Learned Today is a learning-in-public journal about how to use modern AI through my everyday use. It’s a place to share what I tried, what I noticed, and what I’m learning. Honest field notes from someone exploring the field of rapidly evolving AI tools.
+Way Into AI is a practical guide to using modern AI well. Find field-tested tools, habits, and notes that help turn curiosity into capable practice.
 
-- https://ailearnedtoday.com -- knowledgebase and logs
-- https://ailearnedtoday.substack.com -- newsletter
+- https://wayintoai.com -- practical guides, reference notes, and logs
+- https://ailearnedtoday.substack.com -- the Way Into AI newsletter
 
 Contributions welcome!
 
@@ -45,6 +45,8 @@ Contributions welcome!
 [Browse all logs →](/logs)
 
 ## Subscribe
+
+Get new field notes and practical guides in the Way Into AI newsletter.
 
 <iframe
   src="https://ailearnedtoday.substack.com/embed"

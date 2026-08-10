@@ -1,6 +1,6 @@
-# AGENTS.md - AI Learned Today
+# AGENTS.md - Way Into AI
 
-This is a knowledge base repository for documenting AI coding agents, tools, and related topics.
+This is a practical guide and knowledge base for documenting AI coding agents, tools, and related topics.
 
 ## When Adding Entries
 
@@ -17,7 +17,7 @@ This is a knowledge base repository for documenting AI coding agents, tools, and
 4. **Add log entry**: 1-2 sentences in `logs/YYYY-MM-DD.md`
 5. **Pull, commit, push**:
    ```bash
-   cd ~/src/datopian/ailearnedtoday
+   cd ~/src/datopian/wayintoai
    git pull --rebase
    git add ref/ logs/
    git commit -m "Add: [Topic]"
@@ -74,7 +74,7 @@ tags: [tag1, tag2, tag3]
 ## Repository Structure
 
 ```
-ailearnedtoday/
+wayintoai/
 ├── ref/            # Full reference entries
 ├── logs/           # Daily logs (1-2 sentence summaries)
 │   └── index.md    # Flowershow log listing
