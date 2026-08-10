@@ -17,4 +17,4 @@ Some of this is Claude, some is Codex, and I want a pattern that holds across bo
 
 So: **how do I move from running individual agent sessions to running a self-managing fleet — where a manager layer farms out, splits, and tracks work across tools — without losing sight of what's happening?**
 
-A follow-up post will dig into what's actually out there to answer this.
+A follow-up post will dig into what's actually out there to answer this — first pass is up: [Fleet of agents: a survey of orchestration tools (WIP)](/posts/2026-08-10-fleet-of-agents-survey).
