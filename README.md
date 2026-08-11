@@ -1,18 +1,15 @@
 ---
+title: Way Into AI
+description: From curious to capable.
 syntaxMode: mdx
 showToc: false
+showHero: true
+cta:
+  - href: "#quick-link"
+    label: Read more
+  - href: /logs
+    label: Browse logs
 ---
-
-# Way Into AI
-
-From curious to capable.
-
-Way Into AI is a practical guide to using modern AI well. Find field-tested tools, habits, and notes that help turn curiosity into capable practice.
-
-- https://wayintoai.com -- practical guides, reference notes, and logs
-- https://ailearnedtoday.substack.com -- the Way Into AI newsletter
-
-Contributions welcome!
 
 ## Quick link
 
