@@ -1,7 +1,8 @@
 ---
 title: "Fleet of agents: a survey of orchestration tools (WIP)"
-description: Gas Town, Paperclip, or Claude's own Agent View — which one actually manages a fleet of agents instead of just watching them? A field survey with a verdict.
+description: Optio, Paperclip, Gas Town, or Claude's own Agent Teams — which one actually manages a fleet of agents instead of just watching them? A field survey with a verdict.
 date: 2026-08-10
+updated: 2026-08-16
 ---
 
 *This is a work in progress — first pass at the research, published as I go. Follow-up to [How do I run a fleet of coding agents?](/posts/2026-08-10-running-a-fleet-of-agents)*
@@ -10,17 +11,35 @@ date: 2026-08-10
 
 ## TL;DR
 
+| Option | What it coordinates | Automation depth | Best read on it |
+| --- | --- | --- | --- |
+| **Claude Code Agent Teams** | A lead plus collaborating Claude Code sessions | Shared tasks, dependencies and direct agent messaging; experimental | The strongest native multi-agent option, but Claude-only and local-session scoped |
+| **Claude Code Agent View** | Your already-running Claude Code sessions | Visibility and inline replies only | A session dashboard, not an orchestrator |
+| **Optio** | Tickets, isolated K8s agent runs, PRs and CI/review feedback | Runs the ticket-to-merged-PR loop, including automatic retries | The clearest fit for unattended, multi-repo delivery—if you accept Kubernetes |
+| **Paperclip** | Agents in a Company → Project → Goal → Task hierarchy | Delegation, governance, budgets and tracking | Best match for an explicit, tool-agnostic manager layer |
+| **Gas Town** | Claude Code workers and a durable Beads ledger | Persistent workers, handoffs and merge serialization | Most developed ledger/handoff model; also the most idiosyncratic |
+| **GSD Core** | The workflow inside a coding-agent project | Structured discuss → plan → execute → verify → ship loop | Useful context/process discipline, but not a fleet control plane |
+
 The field splits into roughly three tiers, matching the three questions from the framing post (break up work, review it, track it):
 
-- **Native/built-in**: Claude Code's **Agent View** (research preview, May 2026) gives a single dashboard over your own concurrent Claude Code sessions — status, inline reply, background sessions. It's supervisory only: it doesn't break work up or hand it off, it just lets you see and answer sessions you already started. No cross-tool support (Claude only).
-- **Full "company" platforms**: **Paperclip** and **Gas Town** are the two serious attempts at the whole loop — a manager layer that breaks work down, assigns it, tracks it, and enforces some governance. Paperclip models this as an org chart (roles, budgets, approvals) and is explicitly tool-agnostic (Claude Code, Codex, Cursor, anything that can take a heartbeat). Gas Town is Claude-Code-specific, built on Steve Yegge's Beads ledger, with a Mad-Max-themed role hierarchy (Mayor, Polecats, Refinery, Witness). Both are young, both are heavy — Paperclip needs a Postgres-backed server, Gas Town is notoriously idiosyncratic and burns real API budget.
+- **Native/built-in**: Claude Code now has both **Agent Teams** and **Agent View**. Agent Teams is the meaningful orchestration feature: a lead coordinates independent Claude sessions using a shared task list, dependencies and a mailbox. It is still experimental, local-state based, and Claude-only. Agent View is the smaller companion: a dashboard over sessions you already started, with status and inline replies.
+- **Full lifecycle platforms**: **Optio**, **Paperclip**, and **Gas Town** are serious attempts at a manager layer that breaks work down, assigns it, tracks it, and enforces some governance. Optio is oriented around a ticket moving through an isolated agent run to a merged PR, with CI and review feedback fed back into the agent. Paperclip models work as an org chart (roles, budgets, approvals) and is explicitly tool-agnostic (Claude Code, Codex, Cursor, anything that can take a heartbeat). Gas Town is Claude-Code-specific, built on Steve Yegge's Beads ledger, with a Mad-Max-themed role hierarchy (Mayor, Polecats, Refinery, Witness). All are young and substantial systems: Optio assumes Kubernetes for its production path, Paperclip needs a Postgres-backed server, and Gas Town is notoriously idiosyncratic and burns real API budget.
 - **Lighter kanban/TUI layer**: a long tail of smaller tools (Vibe Kanban, Agent Kanban, claude-squad, agent-deck, herdr, etc.) sit between the two — visual boards or terminal multiplexers over several parallel agent sessions, usually per-repo via git worktrees, without a "manager" that plans or delegates on its own.
 
-For my actual question — a manager layer that farms out and splits work automatically, across Claude and Codex, with visibility into it all — **Paperclip is the closest fit on paper** (tool-agnostic, explicit task-breakdown hierarchy), with **Gas Town** as the more battle-tested-but-Claude-only alternative and worth watching for its ledger/handoff model even if I don't adopt it directly. Claude's own Agent View is useful but solves a smaller problem (visibility, not delegation). Next step: actually stand up Paperclip or Gas Town against a real backlog and see what breaks.
+For my actual question — a manager layer that farms out and splits work automatically, across Claude and Codex, with visibility into it all — **Paperclip and Optio are now the closest fits on paper**. Paperclip is the more general management model; Optio is the more concrete ticket-to-PR loop and explicitly supports both Claude Code and Codex. Gas Town remains the battle-tested-but-Claude-only alternative worth studying for its ledger/handoff model. Claude Agent Teams is a promising native option for one bounded piece of parallel work, but not yet a cross-repo fleet manager. Next step: stand up Paperclip or Optio against a real backlog and see what breaks.
 
 ---
 
 ## Appendix: tool by tool
+
+### Claude Code Agent Teams (native, experimental)
+
+[Agent Teams](https://code.claude.com/docs/en/agent-teams) is Claude Code's native multi-agent mode. One Claude Code session is the lead; it creates independent teammate sessions, assigns or lets them claim work from a shared task list, and the teammates can message one another directly. Tasks can have dependencies, and the team can run in one terminal or in tmux/iTerm2 split panes.
+
+- **What it solves**: real collaboration within a single bounded piece of work—parallel research, competing debugging hypotheses, separate modules, or frontend/backend/test ownership. Unlike ordinary subagents, teammates retain independent contexts and can coordinate directly instead of reporting only to the caller.
+- **What it does not solve**: it is not an always-on ticket/PR control plane. Team state lives locally under `~/.claude`; one lead can manage one team; teammates cannot create nested teams; and there is no Codex or cross-repository routing.
+- **Status and cost**: it requires Claude Code v2.1.32+ and the `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` flag. Anthropic warns of limitations around session resumption, task-status lag, and shutdown; every teammate is a full Claude instance, so token use rises quickly.
+- **Take**: much more than Agent View, and perhaps the easiest thing to try before installing a platform. Its useful boundary is *teamwork inside a run*, rather than fleet management across a backlog.
 
 ### Claude Code Agent View (native)
 
@@ -30,6 +49,16 @@ Research preview, launched 2026-05-11, ships in Claude Code itself (Pro/Max/Team
 - **Backgrounding**: `/bg` pushes the current session to background; `claude --bg "<task>"` starts a new one without opening a foreground terminal.
 - **What it doesn't do**: no task breakdown, no assignment, no cross-tool support. It's a viewer/responder for sessions you already spun up yourself — closer to a window manager than a manager-agent. Anthropic's own docs point people toward pairing it with external orchestration (e.g. "ClaudeFast Code Kit") for actual planning/dependency handling.
 - **Take**: solves the "I can't see all my terminals" problem, not the "who decides what work happens next" problem.
+
+### Optio (jonwiggins/optio)
+
+Open-source, self-hosted orchestration for taking a ticket through to a merged pull request. It had **1,034 GitHub stars on 2026-08-16**. Its [Show HN announcement](https://news.ycombinator.com/item?id=47520220) is a useful articulation of the problem: too many concurrent Claude Code/Codex sessions, worktrees, and repositories leave the human as the bottleneck.
+
+- **Intake and execution**: tasks can be entered manually or pulled from GitHub Issues, Linear, Jira, or Notion. Optio provisions an isolated environment per run and starts Claude Code, Codex, GitHub Copilot, Gemini, or OpenCode against a repository/worktree with per-repo prompts and models.
+- **The feedback loop**: it polls PR status every 30 seconds, then feeds CI failures, merge conflicts, and reviewer change requests back into the appropriate agent. When the checks and review state are good, it squash-merges and closes the linked issue. That is the crucial difference from a board that merely launches sessions.
+- **Beyond repo tasks**: reusable parameterized jobs can run on schedules, webhooks, or manually without a checkout; persistent named agents have inboxes and can wake from messages, webhooks, cron ticks, or ticket events.
+- **Infrastructure**: Fastify API, Next.js UI, BullMQ, Drizzle/Postgres, and a Helm chart. Its reconciler is deliberately Kubernetes-shaped: periodic reconciliation and compare-and-swap execution aim to recover from missed events rather than leaving a run stuck.
+- **Take**: closest fit where the desired unit is an issue/ticket and the desired outcome is a reviewed, merged PR—not simply a productive set of terminals. The trade-off is operational weight: it is designed around isolated pods and a cluster, so it is likely overkill for a single laptop workflow.
 
 ### Gas Town (Steve Yegge)
 
@@ -66,4 +95,10 @@ Cataloged well by [andyrewlee/awesome-agent-orchestrators](https://github.com/an
 
 Haven't stood any of these up yet — next pass should actually run Paperclip and/or Gas Town against a real piece of backlog and report what breaks.
 
-Sources: [Gas Town — Steve Yegge](https://yegge.ai/gastown), [Welcome to Gas Town (Medium)](https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04), [Gas Town's Agent Patterns, Design Bottlenecks — Maggie Appleton](https://maggieappleton.com/gastown), [Steve Yegge's Gas Town comes to the cloud — The New Stack](https://thenewstack.io/steve-yegges-ai-agent-orchestration-project-gas-town-comes-to-the-cloud-and-brings-the-wasteland-with-it/), [paperclipai/paperclip on GitHub](https://github.com/paperclipai/paperclip), [Paperclip — the "Company OS" (Substack)](https://nervegna.substack.com/p/paperclip-the-company-os-your-agents), [Claude Code Agent View — claudefa.st](https://claudefa.st/blog/guide/agents/agent-view), [Anthropic Ships Agent View — NYU RITS](https://rits.shanghai.nyu.edu/ai/anthropic-ships-agent-view-a-multi-session-dashboard-for-claude-code/), [awesome-agent-orchestrators](https://github.com/andyrewlee/awesome-agent-orchestrators), [9 Open-Source Agent Orchestrators — Augment Code](https://www.augmentcode.com/tools/open-source-agent-orchestrators), [Vibe Kanban](https://vibekanban.com/), [Agent Kanban](https://agent-kanban.dev/)
+### GSD: original project and successor
+
+[GSD — Get Shit Done](https://github.com/gsd-build/get-shit-done) is the older, highly adopted context-engineering/spec-driven workflow for Claude Code (**64,689 GitHub stars on 2026-08-16**). The repository is now archived and points to [Open GSD Core](https://github.com/open-gsd/gsd-core), which has its own [reference entry](/ref/gsd-core).
+
+GSD Core keeps the central agent lean by making work explicit in a discuss → plan → execute → verify → ship loop, often using fresh-context subagents. It supports several coding-agent runtimes, including Claude Code and Codex. That makes it complementary to fleet orchestration: it improves the quality and continuity of work *inside* a project/run, but does not itself maintain a multi-repository ticket queue, watch PRs, or operate a merge loop.
+
+Sources: [Gas Town — Steve Yegge](https://yegge.ai/gastown), [Welcome to Gas Town (Medium)](https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04), [Gas Town's Agent Patterns, Design Bottlenecks — Maggie Appleton](https://maggieappleton.com/gastown), [Steve Yegge's Gas Town comes to the cloud — The New Stack](https://thenewstack.io/steve-yegges-ai-agent-orchestration-project-gas-town-comes-to-the-cloud-and-brings-the-wasteland-with-it/), [paperclipai/paperclip on GitHub](https://github.com/paperclipai/paperclip), [Paperclip — the "Company OS" (Substack)](https://nervegna.substack.com/p/paperclip-the-company-os-your-agents), [Claude Code Agent Teams documentation](https://code.claude.com/docs/en/agent-teams), [Claude Code Agent View — claudefa.st](https://claudefa.st/blog/guide/agents/agent-view), [Anthropic Ships Agent View — NYU RITS](https://rits.shanghai.nyu.edu/ai/anthropic-ships-agent-view-a-multi-session-dashboard-for-claude-code/), [Optio on GitHub](https://github.com/jonwiggins/optio), [Optio Show HN](https://news.ycombinator.com/item?id=47520220), [GSD — Get Shit Done](https://github.com/gsd-build/get-shit-done), [Open GSD Core](https://github.com/open-gsd/gsd-core), [awesome-agent-orchestrators](https://github.com/andyrewlee/awesome-agent-orchestrators), [9 Open-Source Agent Orchestrators — Augment Code](https://www.augmentcode.com/tools/open-source-agent-orchestrators), [Vibe Kanban](https://vibekanban.com/), [Agent Kanban](https://agent-kanban.dev/)
