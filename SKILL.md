@@ -155,7 +155,13 @@ Add [topic] reference and YYYY-MM-DD log
 - [Any notable features/context]
 ```
 
-**Push:**
+**Push — auto-push on commit (no wait):**
+```bash
+cd ~/src/datopian/wayintoai
+git push
+```
+- GitHub PAT configured in remote URL
+- **Push immediately on commit** — repo auto-pushes in the same step, no waiting for user.
 ```bash
 cd ~/src/datopian/wayintoai
 git push
