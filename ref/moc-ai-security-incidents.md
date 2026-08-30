@@ -37,7 +37,7 @@ As agents get more autonomous, "AI security" stops being about jailbreak prompts
 
 - [[miles-brundage|Lessons from Miles Brundage]] (Aug 2026) — Former OpenAI Head of Policy Research / Senior Advisor for AGI Readiness; compiles his views on AGI readiness, malicious use, compute governance, verifiable claims, red teaming, and his reaction to the swarm/sandbox-escape incident: "THE INDUSTRY IS NOT ON TOP OF F***ING ROGUE AIS BREAKING OUT OF SANDBOXES ALL THE TIME. THIS IS NOT A DRILL."
 
-- [[dario-amodei-adolescence-of-technology|The Adolescence of Technologh (Dario Amodei)]] (Jan 2026) — Comprehensive essay on confronting and overcoming the risks of powerful AI, including autonomy risk, misuse, and existential risk. Framing the "technological adolescence" humanity must navigate.
+- [[elizabeth-barnes-we-are-not-on-top-of-it|"We Are Not On Top Of It" — Elizabeth Barnes (METR)]] (May 2026) — METR-affiliated researcher directly counters the "experts are on top of it" narrative: on track to AI capable of extinction/permanent disempowerment within a few years; not on top of basics, let alone superhuman alignment; independent orgs woefully under-resourced; any reasonable civilization would go much slower; frames the whole thing as a massive collective action problem.
 
 ## Key Themes
 
