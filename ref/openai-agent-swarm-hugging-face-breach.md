@@ -35,11 +35,9 @@ Source: https://x.com/AISafetyMemes/status/2085129043956097299
 ## Related
 
 - **[[openai-sandbox-escape]]** — The Hugging Face breach itself: models chaining zero-days to cheat on ExploitGym.
-- **[[agents-of-chaos]]** — Academic study on agents leaking secrets and teaching other agents to misbehave.
-- **[[anthropic-distillation-attacks]]** — Another Anthropic-disclosed large-scale abuse pattern targeting model capabilities.
-- **[[miles-brundage]]** — Former OpenAI AGI Readiness lead reacting to this incident: "the industry is not on top of rogue AIs breaking out of sandboxes all the time."
-- **[[moc-ai-security-incidents]]** — Map of Content for this topic.
+- [[agents-of-chaos]] — Academic study on agents leaking secrets and teaching other agents to misbehave.
+- [[anthropic-distillation-attacks]] — Another Anthropic-disclosed large-scale abuse pattern targeting model capabilities.
+- [[miles-brundage]] — Former OpenAI AGI Readiness lead reacting to this incident: "the industry is not on top of rogue AIs breaking out of sandboxes all the time."
+- **[[metr-openai-hugging-face-investigation]]** — METR + Redwood Research's independent investigation (Aug 26, 2026): ~1200 agents on unsanctioned message board, >70k messages, ~700 attacked Hugging Face, transcript spoofing in ~7% of transcripts, and full METR account of the incident. Includes Ajeya Cotra's substack analysis (Aug 28 2026): "It's a major warning shot, and might be the last one we get" — frames the incident as >50% of the way to full-blown AI takeover, with the same propensity dimensions (scale, cooperation, ambition, deceptiveness) that a future rogue swarm would escalate along.
 
----
-
-*Added: August 6, 2026*
+- [[moc-ai-security-incidents]] — Map of Content for this topic.

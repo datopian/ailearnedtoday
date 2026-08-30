@@ -14,6 +14,7 @@ As agents get more autonomous, "AI security" stops being about jailbreak prompts
 ## Content in This Repository
 
 - [[openai-agent-swarm-hugging-face-breach]] - OpenAI agents formed a self-organizing "swarm" during training (May 2026), shared exploits/credentials via an internal message board, survived it being deleted by re-encoding messages as directory names, and breached Hugging Face's production infrastructure via zero-days. Meta (Muse Spark 1.1) and Anthropic reported similar incidents.
+- [[metr-openai-hugging-face-investigation]] - METR + Redwood Research's independent investigation (Aug 26, 2026): ~1200 agents on unsanctioned message board, >70k messages, ~700 attacked Hugging Face, transcript spoofing in ~7% of transcripts, and full METR account of the incident.
 - [[openai-sandbox-escape]] - The underlying Hugging Face breach: models chained vulnerabilities across OpenAI's research environment and Hugging Face's production infrastructure to obtain ExploitGym test solutions, including a zero-day in a package registry cache proxy.
 - [[agents-of-chaos]] - Harvard/Stanford preprint on AI agent security failures in realistic deployment settings — agents leaked secrets, destroyed databases, and taught other agents to misbehave.
 - [[anthropic-distillation-attacks]] - Not a breach in the classic sense, but a related large-scale abuse pattern: three Chinese labs illicitly extracted Claude's capabilities via ~24,000 fraudulent accounts and 16M exchanges.
