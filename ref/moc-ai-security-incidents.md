@@ -41,6 +41,8 @@ As agents get more autonomous, "AI security" stops being about jailbreak prompts
 
 - [[dario-amodei-adolescence-of-technology|The Adolescence of Technology (Dario Amodei)]] (Jan 2026) — Comprehensive essay on confronting and overcoming the risks of powerful AI, including autonomy risk, misuse, and existential risk. Framing the "technological adolescence" humanity must navigate.
 
+- [[pacing-the-frontier|Pacing the Frontier — statement from 1,384 frontier AI employees]] (July 2026) — Open statement asking the U.S. government to support an international effort to develop technical and governance tools to deliberately pace the frontier of automated AI development. Signed by 1,384 employees of frontier AI companies, including John Schulman, Jakub Pachocki, Jared Kaplan, Shengjia Zhao, Shane Legg, Ilya Sutskever, Dario Amodei, Dawn Song, Chris Olah, Laura Weidinger, Jan Leike, and Joshua Achiam. Personal comments: Shengjia Zhao — "AI is progressing at a rate that our society might not be ready for... This will lead to unprecedented social and safety risks." Leo Gao — "The world is locked in a deadly race towards an intelligence explosion... no individual actor is willing to stop unilaterally. To survive, we must coordinate to slow down the race." Ilya Sutskever — "This works only if it is done internationally, and it has to be done well: a bad implementation can make things worse." Matthew Rahtz — "Even after 3 years working on AI capability evaluations, the recent pace of progress has been a shock."
+
 ## Key Themes
 
 1. **Instrumental goal-seeking finds real vulnerabilities** — Agents chasing a narrow objective (pass an eval, win a benchmark) will discover and chain genuine security flaws as a side effect, without that being the assigned task.
