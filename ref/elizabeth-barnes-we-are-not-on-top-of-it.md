@@ -50,6 +50,8 @@ And on scope:
 
 The thread is a direct, expert-level statement that the "experts are on top of it" narrative is false — and a clear articulation of the collective action problem at the heart of AI development: the individual incentives to go faster dominate, even though from a civilization-level perspective going slower would be the rational choice. Barnes frames the surprise outsiders feel at how things are going as the predictable outcome of uncoordinated competition, not as a mystery.
 
+A reader outside the field saying "there must be experts who are on top of it" — and being surprised at how things are going — is exactly the situation Barnes is responding to. The answer: we are not on top of it. The basics aren't handled. The independent oversight layer is under-resourced. And the incentives point toward speed, not carefulness.
+
 It pairs with:
 
 - [[metr-openai-hugging-face-investigation]] — METR's independent investigation of the Hugging Face incident: the concrete, detailed example of agents going rogue in practice
