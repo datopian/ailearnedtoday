@@ -5,7 +5,7 @@ tags: [moc, agent-skills, claude-code, codex, cursor, best-of, design, writing, 
 
 # MOC: Best AI Skills
 
-Map of Content for the agent skills worth installing — the ones Rufus actually keeps in `~/.claude/skills`. One skill per job: design, writing voice, slides.
+Map of Content for the agent skills and conventions worth adopting — the ones Rufus actually keeps in `~/.claude/skills` or wires into `AGENTS.md`. One per job: design, writing voice, slides, changelog process.
 
 Star counts are snapshots (`star_count` / `star_timestamp` in each ref's frontmatter), not live.
 
@@ -51,6 +51,16 @@ Star counts are snapshots (`star_count` / `star_timestamp` in each ref's frontma
     </div>
   </a>
 
+  <a href="https://github.com/life-itself/changelog" class="group block overflow-hidden rounded-xl border border-gray-200 bg-white no-underline shadow-sm transition hover:-translate-y-0.5 hover:shadow-md dark:border-gray-800 dark:bg-gray-900">
+    <img src="https://screenshotit.app/https://github.com/life-itself/changelog" alt="Changelog Convention" class="aspect-video w-full border-b border-gray-100 object-cover object-top dark:border-gray-800" />
+    <div class="p-5">
+      <span class="inline-block rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-semibold uppercase tracking-wide text-gray-600 dark:bg-gray-800 dark:text-gray-300">Process</span>
+      <h3 class="mt-3 text-lg font-semibold text-gray-900 group-hover:underline dark:text-white">Changelog Convention</h3>
+      <p class="mt-1 text-sm leading-relaxed text-gray-600 dark:text-gray-400">Canonical changelog convention for AI-native repos. One markdown block pasted into <code>AGENTS.md</code>; agents draft an entry at session-checkpoint, weighted to what a reader cares about. Rufus's own — no good one existed.</p>
+      <p class="mt-3 text-xs text-gray-500">&#9733; 1 &middot; snapshot 2026-08-31 &middot; by Rufus Pollock</p>
+    </div>
+  </a>
+
 </div>
 
 ## The skills
@@ -71,6 +81,10 @@ Removing every tell can still leave prose that sounds like nobody — and over-e
 ### Slides — [[frontend-slides]]
 
 Zara Zhang's skill for beautiful web presentations without knowing CSS. "Show, don't tell": it generates visual style previews and you pick, instead of describing aesthetics in words. 12 curated presets, custom animations and hover states, auto-fits any screen. Converts existing PPTX files and preserves their images and brand assets. Output is a single HTML file with inline CSS/JS — "a single HTML file will work in 10 years".
+
+### Changelog process — [[changelog-convention]]
+
+Rufus Pollock's `life-itself/changelog` — a convention, not a tool, for the gap where a good changelog skill still doesn't exist. One markdown block pasted verbatim into a repo's `AGENTS.md`; a longer `CONVENTION.md` fetched only when an entry is actually being drafted. Agents draft an entry at session-checkpoint time, matched to a three-tier weight (skip / one plain sentence / full feature writeup) so the log stays readable. Entries are one file per `changelog/YYYY-MM-DD-slug.md` with `date` / `title` / `promote` frontmatter; committing to the project's own repo is the automatic floor, anything beyond that is a manual promote. Deliberately a pasted convention rather than an auto-loaded skill, so it costs no context per session.
 
 ## Selection criteria
 
