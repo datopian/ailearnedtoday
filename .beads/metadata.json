@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "wayintoai",
+  "project_id": "968ab851-c443-4873-966d-b745ea6c207d"
+}
