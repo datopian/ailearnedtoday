@@ -2,6 +2,8 @@
 created: 2026-03-04
 author: Zara Zhang
 tags: [claude-code, claude-skill, presentations, slides, web-design, html, css, animations, pptx-conversion, vibe-coding, no-dependencies]
+star_count: 28451
+star_timestamp: 2026-08-31T15:51:24Z
 ---
 
 # Frontend Slides - Beautiful Web Presentations with Claude

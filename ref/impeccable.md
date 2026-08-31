@@ -2,6 +2,8 @@
 created: 2026-08-17
 author: Paul Bakaus
 tags: [design, claude-code, cursor, coding-agents, design-systems, frontend, ai-slop, plugin]
+star_count: 64289
+star_timestamp: 2026-08-31T15:51:24Z
 ---
 
 # Impeccable
@@ -12,7 +14,7 @@ tags: [design, claude-code, cursor, coding-agents, design-systems, frontend, ai-
 
 **Website:** [impeccable.style](https://impeccable.style/)
 **GitHub:** [github.com/pbakaus/impeccable](https://github.com/pbakaus/impeccable)
-**Stars:** 61k | **Forks:** 3.7k | **License:** Apache 2.0
+**Stars:** 64k | **Forks:** 3.4k | **License:** Apache 2.0 · *(star_count 64,289 as of 2026-08-31)*
 
 ## What it is
 
