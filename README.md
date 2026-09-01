@@ -1,19 +1,25 @@
 ---
 title: Way Into AI
-description: From curious to capable.
+description: Practical ways to use AI—and clear-eyed notes on what it is changing.
 syntaxMode: mdx
 showToc: false
 showHero: true
 cta:
-  - href: "#quick-link"
-    label: Read more
-  - href: /logs
-    label: Browse logs
+  - href: /use
+    label: Use AI
+  - href: /understand
+    label: Understand AI
 ---
 
-## Quick link
+## Two ways in
 
-- [Loop Engineering →](/ref/moc-loop-engineering) — how to set up an unattended agent loop: the five preconditions, an applied checklist, and a copy-pasteable bootstrap prompt.
+### [Use AI →](/use)
+
+Practical guides, workflows, tools, and field notes for putting AI to work.
+
+### [Understand AI →](/understand)
+
+Clear-eyed notes on capability, policy, work, power, safety, and the wider consequences of AI.
 
 ## Latest posts
 

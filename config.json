@@ -9,6 +9,14 @@
     "title": "Way Into AI",
     "links": [
       {
+        "name": "Use AI",
+        "href": "/use"
+      },
+      {
+        "name": "Understand AI",
+        "href": "/understand"
+      },
+      {
         "name": "Posts",
         "href": "/posts"
       },
