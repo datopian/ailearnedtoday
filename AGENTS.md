@@ -99,6 +99,29 @@ wayintoai/
 
 **Don't work from memory. Read SKILL.md when adding entries.**
 
+## Changelog
+
+This repo keeps a `changelog/` folder, one markdown file per entry
+(`changelog/YYYY-MM-DD-slug.md`, with `date`/`title`/`promote`
+frontmatter). This changelog is **only for platform and infrastructure
+changes**—for example, a change to site behaviour, build/deployment, or
+repository tooling. Do not add editorial content changes to it; those belong
+in the site's ordinary content/logging flow.
+
+At the end of a work session, if a platform or infrastructure change worth
+recording actually shipped—skip trivial sessions (typo fixes, dead ends, no
+visible outcome)—draft a new entry file. Match the entry's weight to what a
+reader would actually care about: a real platform feature or fix gets a title,
+one or two sentences, a link to the live feature if there is something to
+point at, and a screenshot if something visual shipped (check for this, do
+not just skip it); something genuinely bigger—a real milestone, not just a
+busy session—can run longer, with multiple paragraphs or bullets; small work
+(cleanup, rename, reorganisation, tidying) gets one plain sentence, with no
+bullets or screenshot. Never link the title itself. Do not log implementation
+detail (file names, internal moves) a reader would not care about. First time
+writing an entry in this repo, or if the format is unclear, fetch and follow
+https://raw.githubusercontent.com/life-itself/changelog/main/CONVENTION.md.
+
 <!-- BEGIN BEADS INTEGRATION v:1 profile:minimal hash:970c3bf2 -->
 ## Beads Issue Tracker
 

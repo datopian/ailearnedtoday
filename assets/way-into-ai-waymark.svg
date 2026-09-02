@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title desc">
+  <title id="title">Way Into AI waymark</title>
+  <desc id="desc">Two open routes meeting at a central signal point.</desc>
+  <path d="M7 6v36M41 6v36" fill="none" stroke="#173d33" stroke-linecap="square" stroke-width="4"/>
+  <path d="M13 12 24 24 13 36M35 12 24 24 35 36" fill="none" stroke="#173d33" stroke-linecap="square" stroke-linejoin="miter" stroke-width="4"/>
+  <rect x="20.5" y="20.5" width="7" height="7" fill="#c9502e" transform="rotate(45 24 24)"/>
+</svg>
