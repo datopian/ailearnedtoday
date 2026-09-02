@@ -28,7 +28,7 @@ The existing site is Flowershow content authored in Markdown, with standard HTML
 
 ## Brand Commitments
 
-The name is Way Into AI. Its voice is direct, useful, and unpretentious: concrete examples and honest uncertainty over hype, jargon, or false certainty. The navigation uses a simple wordmark rather than a decorative logo. The two entry routes are named **Use AI** and **Understand AI**.
+The name is Way Into AI. Its voice is direct, useful, and unpretentious: concrete examples and honest uncertainty over hype, jargon, or false certainty. The navigation retains the existing compact AI tile for now. The two entry routes are named **Use AI** and **Understand AI**.
 
 ## Evidence on Hand
 

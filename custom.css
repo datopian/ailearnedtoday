@@ -1,5 +1,4 @@
-/* A direct editorial homepage: no generated hero art, card shell, or MDX. */
-.site-navbar-site-title > img.site-navbar-site-logo { display: none; }
+/* A direct editorial homepage: no hero art, card shell, or MDX. */
 
 .way-home {
   --way-ink: #173d33;
@@ -17,8 +16,8 @@
 .way-home *, .way-home *::before, .way-home *::after { box-sizing: border-box; }
 .way-home ::selection { background: var(--way-clay); color: var(--way-paper); }
 .way-home a:focus-visible { outline: 3px solid var(--way-clay); outline-offset: 4px; }
-.way-home__sheet { background: var(--way-paper); overflow: hidden; }
-.way-home__intro, .way-home__notebook, .way-home__footer { padding-left: max(1.5rem, calc((100vw - 1120px) / 2)); padding-right: max(1.5rem, calc((100vw - 1120px) / 2)); }
+.way-home__sheet { background: var(--way-paper); margin: 0 auto; max-width: 1280px; overflow: hidden; }
+.way-home__intro, .way-home__notebook, .way-home__footer { padding-left: clamp(1.5rem, 5vw, 5rem); padding-right: clamp(1.5rem, 5vw, 5rem); }
 .way-home__intro { border-bottom: 1px solid rgb(23 61 51 / 22%); padding-bottom: clamp(2.5rem, 5vw, 4rem); padding-top: clamp(2.75rem, 6vw, 5rem); }
 .way-home h1, .way-home h2, .way-home__route-copy strong { font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif; font-weight: 600; letter-spacing: -0.035em; }
 .way-home h1 { color: var(--way-ink); display: block; font-size: clamp(3.5rem, 8vw, 6rem); line-height: 0.9; margin: 0; max-width: 850px; }
@@ -26,10 +25,11 @@
 .way-home h2 { color: var(--way-ink); font-size: clamp(2.25rem, 5vw, 4rem); line-height: 0.95; margin: 0; }
 .way-home__lede { color: #385049; font-size: clamp(1.1rem, 2vw, 1.3rem); line-height: 1.55; margin: 2rem 0 0; max-width: 680px; }
 .way-home__routes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.way-home__route { color: var(--way-ink); display: flex; min-height: clamp(14rem, 18vw, 18rem); padding: clamp(2rem, 4vw, 3.5rem); text-decoration: none; }
+.way-home__route { color: var(--way-ink); display: flex; flex-direction: column; min-height: clamp(16rem, 20vw, 20rem); padding: clamp(2rem, 4vw, 3.5rem); text-decoration: none; }
 .way-home__route--use { background: var(--way-field); border-right: 1px solid rgb(23 61 51 / 22%); }
 .way-home__route--understand { background: #f0dfcf; }
-.way-home__route-copy { display: flex; flex-direction: column; justify-content: space-between; max-width: 28rem; }
+.way-home__route-image { aspect-ratio: 3 / 2; display: block; margin-bottom: clamp(1.5rem, 3vw, 2.5rem); object-fit: cover; width: 100%; }
+.way-home__route-copy { display: flex; flex: 1; flex-direction: column; justify-content: space-between; max-width: 28rem; }
 .way-home__route-copy strong { font-size: clamp(2.65rem, 5vw, 4.5rem); line-height: 0.92; }
 .way-home__route-copy > span:not(.way-home__action) { color: #385049; font-size: 1.05rem; line-height: 1.55; margin-top: 1.25rem; }
 .way-home__action, .way-home__browse { align-items: center; border-bottom: 2px solid currentColor; color: inherit; display: inline-flex; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.88rem; font-weight: 700; gap: 0.75rem; margin-top: 2.25rem; padding-bottom: 0.25rem; text-decoration: none; width: fit-content; }

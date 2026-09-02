@@ -17,6 +17,7 @@ showEditLink: false
 </section>
 <section class="way-home__routes" aria-label="Choose your way in">
 <a class="way-home__route way-home__route--use" href="/use">
+<img class="way-home__route-image" src="/assets/use-ai-desk.png" alt="A person annotating a notebook beside a laptop at a desk.">
 <span class="way-home__route-copy">
 <strong>Use AI.</strong>
 <span>Practical guides, workflows, tools, and field notes for putting AI to work in the things you actually do.</span>
@@ -24,6 +25,7 @@ showEditLink: false
 </span>
 </a>
 <a class="way-home__route way-home__route--understand" href="/understand">
+<img class="way-home__route-image" src="/assets/understand-ai-civic-room.png" alt="People in a public research room discussing information in front of a large map.">
 <span class="way-home__route-copy">
 <strong>Understand AI.</strong>
 <span>Clear-eyed notes on capability, policy, work, power, safety, and the consequences worth paying attention to.</span>
