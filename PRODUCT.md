@@ -24,11 +24,11 @@ Visitors enter through **Use AI** for guides, workflows, tools, and agentic codi
 
 ## Capabilities and Constraints
 
-The existing site is Flowershow content authored in Markdown/MDX, with Tailwind utility classes available in raw HTML. Preserve real routes and editorial material; do not invent testimonials, metrics, customers, or policy claims. The custom visual landing page must remain readable, responsive, and accessible.
+The existing site is Flowershow content authored in Markdown, with standard HTML and custom CSS available for the homepage. Preserve real routes and editorial material; do not invent testimonials, metrics, customers, or policy claims. The custom visual landing page must remain readable, responsive, and accessible.
 
 ## Brand Commitments
 
-The name is Way Into AI. Its voice is direct, useful, and unpretentious: concrete examples and honest uncertainty over hype, jargon, or false certainty. Its new waymark shows two open routes meeting at a clay-red signal point; it replaces the older split-colour AI tile. The two entry routes are named **Use AI** and **Understand AI**.
+The name is Way Into AI. Its voice is direct, useful, and unpretentious: concrete examples and honest uncertainty over hype, jargon, or false certainty. The navigation uses a simple wordmark rather than a decorative logo. The two entry routes are named **Use AI** and **Understand AI**.
 
 ## Evidence on Hand
 

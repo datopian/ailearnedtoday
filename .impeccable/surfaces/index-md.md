@@ -13,10 +13,10 @@ related_targets: ["use/index.md","understand/index.md"]
 
 **Action:** Choose **Use AI** for practical work or **Understand AI** for wider context, then continue into posts, logs, and the newsletter.
 
-**Content and proof:** The two entry routes, the actual archive, and the generated two-panel illustration. No invented metrics, testimonials, or commercial claims.
+**Content and proof:** The two entry routes and the actual archive. No invented metrics, testimonials, commercial claims, or decorative hero imagery.
 
 **Constraints:** Flowershow plain Markdown mode with standard HTML and custom CSS; preserve real routes, semantic links, mobile readability, and the site navigation/footer. The old default hero and sidebar are absent only on this homepage.
 
-**Chosen direction:** A contemporary field dispatch printed on warm paper: bottle-green ink, clay-red signal, deliberate rules, and a two-panel image of practice and consequence. The memorable moment is the central illustration resolving the practical desk and civic horizon into one shared field.
+**Chosen direction:** A contemporary field dispatch that is part of the site, not a framed miniature of it: warm paper, bottle-green ink, clay-red signal, deliberate rules, a plain wordmark, and two full-width typographic routes.
 
 **Unresolved:** The visual world is established for the homepage; future Use AI and Understand AI landing pages can inherit it in a later pass.
