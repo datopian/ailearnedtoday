@@ -2,6 +2,7 @@
 created: 2026-09-05
 author: OpenAI
 tags: [models, openai, gpt-6-astra, agents, coding, computer-use, cybersecurity, alignment, benchmarks, major-news]
+image: /assets/astra-arc-agi-2026-09-05.jpg
 ---
 
 # GPT-6 Astra: A New Generation of Intelligence
