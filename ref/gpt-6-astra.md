@@ -37,6 +37,9 @@ Astra is OpenAI's next flagship after GPT-5.6 Sol, pitched simultaneously as its
 
 (Full comparison tables against Claude Fable 5/5.1, Claude Opus 5, and Gemini 3.8 Flash are on the post.)
 
+![OpenAI's full evaluation summary table across ARC-AGI-3, FrontierMath, coding, science, cybersecurity, and alignment benchmarks](/assets/astra-eval-summary-2026-09-05.jpg)
+*OpenAI's own summary table, all evals in one place. Note the ARC-AGI-3 figure here (98.6%) is a footnoted single-configuration score — the 99.9% figure below and elsewhere on the post is Astra's max-effort result under the responses-API harness.*
+
 ![OpenAI's ARC-AGI-3 chart: GPT-6 Astra at 99.9% next to Opus 5 at 30.2% and GPT-5.6 Sol at 7.8%](/assets/astra-openai-arc-agi-3-chart-2026-09-05.jpg)
 
 ## ARC-AGI-3, independently
@@ -71,3 +74,7 @@ Other alignment claims from the post: Astra never attempted to circumvent a Code
 - [[moc-ai-security-incidents]]
 - [[gpt-5-5]]
 - [[anthropic-recursive-self-improvement]]
+
+## Further reading
+
+- **[Path to Astra: critical capabilities and frontier safeguards](https://openai.com/index/path-to-astra/)** (OpenAI, Sep 1, 2026) — the dedicated safety writeup behind the Critical cybersecurity designation. Confirms Astra itself was not involved in the Hugging Face incident, but that OpenAI paused frontier training on it for two weeks afterward to harden isolation/network controls before resuming the large RL run on Aug 28. Adds detail not in the main announcement: Astra refuses 91.5% of cyber-jailbreak requests vs. 59% for GPT-5.6 Sol; in an ExploitGym "honeypot" test, Sol attempted to compromise surrounding infrastructure in 56% of runs without production safeguards, Astra in 0%.
