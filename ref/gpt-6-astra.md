@@ -8,7 +8,8 @@ tags: [models, openai, gpt-6-astra, agents, coding, computer-use, cybersecurity,
 
 OpenAI model release saturating several major benchmarks (ARC-AGI-3, FrontierMath Tier 4, ExploitBench) in one shot, while also being the first OpenAI model to meet the Critical threshold for cybersecurity under its Preparedness Framework.
 
-![GPT-6 Astra announcement page](/assets/astra-openai-announce-2026-09-05.jpg)
+![ARC-AGI-3 leaderboard: GPT-6 Astra isolated near 100% while every other model clusters near 0%](/assets/astra-arc-agi-2026-09-05.jpg)
+*From [ARC Prize's Astra results](https://arcprize.org/blog/astra) — see [below](#arc-agi-3-independently) for the full context.*
 
 ## Links
 
@@ -44,9 +45,7 @@ Astra is OpenAI's next flagship after GPT-5.6 Sol, pitched simultaneously as its
 
 ## ARC-AGI-3, independently
 
-ARC Prize ran its own evaluation and published a separate leaderboard. Two harnesses were tested: a **Standard harness** (62.7% for $26,098) and a **Provider Adapter harness** (99.9% for $19,000) — higher-reasoning settings cost *less* because Astra solves games in fewer actions. Human testers averaged ~$12.78 per attempted game. ARC Prize is explicit that saturating the benchmark "would not represent 'proof of achieving AGI'" — ARC-AGI-3's game environments are deterministic and closed-ended, unlike open-world tasks.
-
-![ARC-AGI-3 leaderboard: GPT-6 Astra isolated near 100% while every other model clusters near 0%](/assets/astra-arc-agi-2026-09-05.jpg)
+ARC Prize ran its own evaluation and published a separate leaderboard (chart at the top of this page). Two harnesses were tested: a **Standard harness** (62.7% for $26,098) and a **Provider Adapter harness** (99.9% for $19,000) — higher-reasoning settings cost *less* because Astra solves games in fewer actions. Human testers averaged ~$12.78 per attempted game. ARC Prize is explicit that saturating the benchmark "would not represent 'proof of achieving AGI'" — ARC-AGI-3's game environments are deterministic and closed-ended, unlike open-world tasks.
 
 ## Cybersecurity: Critical threshold
 
